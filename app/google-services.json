@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "826579723789",
+    "project_id": "klicked-25040",
+    "storage_bucket": "klicked-25040.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826579723789:android:7eee7fdc96d21334e25744",
+        "android_client_info": {
+          "package_name": "com.dating.klicked"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826579723789-h62u1q54gki58771sl5vp2beramkepg9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dating.klicked",
+            "certificate_hash": "4516048793e986ffabd5179e26cba14f6bfc9405"
+          }
+        },
+        {
+          "client_id": "826579723789-n6q54vq9fmm9bifkr8fvo39ogofoki0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNxGCjTLn2WZppa3A437HlFlM6EHxF2tI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826579723789-n6q54vq9fmm9bifkr8fvo39ogofoki0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

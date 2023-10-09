@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Fragment.SideMenu.HotelInfoFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                app:iss_auto_cycle="false"
+                app:iss_delay="1000"
+                app:iss_period="2000"
+                app:iss_selected_dot="@drawable/ic_fill_circle"
+                app:iss_unselected_dot="@drawable/ic_unfill_circle" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:singleLine="true"
+                android:text="The Burger Home's"
+                android:textColor="@color/text_tittle"
+                android:textSize="17dp" />
+
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                android:id="@+id/text_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_name"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/card"
+                android:saveEnabled="false"
+                app:srb_borderColor="#FF9C1B"
+                app:srb_fillColor="#FFC51B"
+                app:srb_isIndicator="true"
+                app:srb_numberOfStars="5"
+                app:srb_rating="3"
+                app:srb_starBorderWidth="2"
+                app:srb_starSize="13dp"
+                app:srb_stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/text_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                android:padding="15dp"
+                android:text="@string/txt_dummy"
+                android:textColor="#CC313131"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/hotel" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txt_hname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/card"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="The Burger Home's"
+                    android:textColor="@color/text_tittle"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_hname"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/card"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#992B2B2B"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotel Time"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/text_tittle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:justificationMode="inter_word"
+                    android:text="Opening Time       :- "
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/text_tittle"/>
+                <TextView
+                    android:id="@+id/txt_open"
+                    android:textStyle="normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="12:00 am "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#992B2B2B"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Closing Time         :- "
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/text_tittle"/>
+                <TextView
+                    android:id="@+id/txt_close"
+                    android:textStyle="normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="12:00 pm "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#992B2B2B"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@mipmap/map_image"
+                android:layout_margin="15dp"
+                android:scaleType="fitXY"/>
+
+
+            <LinearLayout
+                android:id="@+id/txt_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_background_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Call"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>

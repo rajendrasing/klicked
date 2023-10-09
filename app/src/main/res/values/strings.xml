@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Klicked</string>
+
+    <string name="facebook_app_id">235814552060598</string>
+    <string name="fb_login_protocol_scheme">fb235814552060598</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="txt_connection">No Internet Connection Found Check Your Connection or Try Again</string>
+
+    <string name="txt_dummy">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</string>
+
+    <string name="txt_faq_dia">your question has been successfully \n submitted. you will get answer very soon</string>
+    <string name="txt_rew_dia">Thankyou for your order. Your order has been\n successfully placed.</string>
+
+
+    <string name="see_more"><u>See more </u></string>
+    <string name="see_less"><u>See less </u></string>
+    <string name="reset"><u>Reset</u></string>
+    <string name="know_more"><u> Know More </u></string>
+    <string name="update"><u>  Update  </u></string>
+
+    <string name="change"><u>  Change Audio from Selected Files</u></string>
+
+    <string name="record"><u>  Record Your Audio</u></string>
+    <string name="rupee_sign">₹</string>
+
+    <string name="razor_api_key">rzp_test_2ZF1QV2STcpzIg</string>
+
+
+    <string name="txt_next_per"><u>Next person?</u></string>
+
+    <string name="edit_setting__logout">Logout</string>
+    <string name="edit_setting__logout_question">Are you sure to logout !!!!! </string>
+    <string name="app__ok">OK</string>
+    <string name="app__cancel">Cancel</string>
+
+    <string name="exit">Exit</string>
+    <string name="app_exit">Are you sure you want to close App?</string>
+    <string name="app__yes">Yes</string>
+    <string name="app__no">No</string>
+
+    <string name="poppins_medium">poppins_semibold</string>
+
+    <string name="number_picker_formatter">%01d cm</string>
+
+    <string name="wel_text">Looks will fade but your personality will only grow stronger, so we say, "show them what you got".</string>
+
+
+    <!-- Image button descriptions for accessibility -->
+
+    <string name="start_marker">Start marker</string>
+    <string name="end_marker">End marker</string>
+    <string name="rewind">Rewind</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="ffwd">Fast forward</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="save_button">Save</string>
+
+    <string name="start_label">Start:</string>
+    <string name="end_label">End:</string>
+
+    <!-- Progress dialog text for loading, recording, or saving... -->
+    <string name="progress_dialog_loading">Loading…</string>
+    <string name="progress_dialog_recording">Recording…</string>
+    <string name="progress_dialog_saving">Saving…</string>
+    <string name="progress_dialog_cancel">Cancel</string>
+    <string name="progress_dialog_stop">Stop</string>
+
+
+    <!--
+ Success and error messages
+ -->
+
+    <string name="alert_title_success">Success</string>
+    <string name="alert_title_failure">Error</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_yes_button">Yes, please!</string>
+    <string name="alert_no_button">No, thanks.</string>
+
+    <string name="save_success_message">Saved!</string>
+    <string name="default_ringtone_success_message">Changed default ringtone</string>
+    <string name="default_notification_success_message">Changed default notification sound</string>
+    <string name="play_error">Unable to play this media file</string>
+    <string name="no_unique_filename">Unable to find unique filename</string>
+    <string name="record_error">Error recording audio</string>
+    <string name="too_small_error">Can\'t save a file that large, try making it smaller.</string>
+    <string name="write_error">Error writing file</string>
+    <string name="read_error">Error reading file</string>
+
+    <string name="no_space_error">Your SD card is full, there is not enough space to save this file.</string>
+
+    <string name="bad_extension_error">Sorry, Ringdroid is not yet able to edit files of type</string>
+    <string name="no_extension_error">Sorry, Ringdroid can\'t edit a file if it doesn\'t have an extension like .mp3 or .wav</string>
+
+    <string name="time_seconds">seconds</string>
+
+    <string name="asset_statements">
+    [{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.dating.klicked",
+               "sha256_cert_fingerprints": ["95:68:FC:3D:BF:E2:CC:1B:53:51:27:C9:57:AA:0E:52:37:E5:7A:08:62:1A:E6:A0:15:0E:18:B1:87:7E:40:D8"] }
+},{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.dating.klicked",
+               "sha256_cert_fingerprints": ["04:20:A5:AE:F6:D6:CD:06:DE:EC:A6:AC:9F:36:76:7D:90:3D:A6:85:65:49:05:C9:48:25:FC:8A:77:15:46:49"] }
+}]
+  </string>
+
+</resources>

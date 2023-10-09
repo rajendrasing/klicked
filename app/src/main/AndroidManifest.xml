@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dating.klicked">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Klicked"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activity.IntroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.CallActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FullScreenImage.Fullscreen_view"
+            android:exported="true" />
+        <activity
+            android:name=".AuidoTrimmer.AudioTrimmerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SpeedDatingChating"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PlanDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PlanPurchaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.No_Internet_Connection"
+            android:exported="true" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".Authentication.Add_Image"
+            android:exported="true" /> <!-- android:theme="@style/Theme.Klicked.NoActionBar" -->
+        <activity
+            android:name=".Authentication.Audio_Des"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.View_Flipper"
+            android:exported="true">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Authentication.EnterOtp"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.PhoneNumber"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.Login"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter
+                android:autoVerify="true"
+                tools:targetApi="m">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data
+                    android:host="www.klicked.co"
+                    android:pathPrefix="/UserProfile" />
+                <data
+                    android:host="klicked_userprofile="
+                    android:pathPrefix="/"
+                    android:scheme="deeplink" />
+
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/razor_api_key" />
+    </application>
+
+</manifest>

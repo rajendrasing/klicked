@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Authentication.PhoneNumber">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_back_arrow" />
+
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_back"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_heart_icon" />
+
+        <TextView
+            android:id="@+id/txt_wel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Enter Your Phone No."
+            android:textColor="@color/text_tittle"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/txt_wel"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/btn_border">
+
+                <Spinner
+                    android:id="@+id/countryCode"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/abc_spinner_mtrl_am_alpha"
+                    android:backgroundTint="#D8D8D8"
+                    android:gravity="center"
+                    android:popupElevation="3dp" />
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/ed_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_border"
+                android:layout_marginStart="15dp"
+                android:padding="5dp"
+                android:hint="Your Phone No."
+                android:textSize="15dp"
+                android:textColor="@color/text_tittle"
+                android:paddingStart="20dp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:textColorHint="#D8D8D8"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center|start"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/txt_ready"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btn_background_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Ready to go"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/back_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Back to login"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#2B2B2B"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_semibold"/>
+    </RelativeLayout>
+
+
+</layout>

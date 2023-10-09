@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.dating.klicked.Fragment.BottomMenu.Home_fragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_fragment_to_profile_Info_Fragment"
+            app:destination="@id/profile_Info_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/profile_Info_Fragment"
+            app:popUpToInclusive="true" />
+        <deepLink
+            android:autoVerify="true"
+            app:uri="https://www.klicked.co/UserProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorites_fragment"
+        android:name="com.dating.klicked.Fragment.BottomMenu.Favorites_fragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/speedDating_Fragment"
+        android:name="com.dating.klicked.Fragment.BottomMenu.SpeedDating_Fragment"
+        android:label="Speed Dating"
+        tools:layout="@layout/fragment_speed_dating" />
+    <fragment
+        android:id="@+id/klicksFragment"
+        android:name="com.dating.klicked.Fragment.BottomMenu.KlicksFragment"
+        android:label="Klicks"
+        tools:layout="@layout/fragment_klicks">
+        <action
+            android:id="@+id/action_klicksFragment_to_pendingFragment"
+            app:destination="@id/pendingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/pendingFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_klicksFragment_to_requestFragment"
+            app:destination="@id/requestFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/requestFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_klicksFragment_to_klickedList"
+            app:destination="@id/klickedList"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/klickedList"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat_Fragment"
+        android:name="com.dating.klicked.Fragment.BottomMenu.Chat_Fragment"
+        android:label="Chats"
+        tools:layout="@layout/fragment_chat">
+        <action
+            android:id="@+id/action_chat_Fragment_to_userChat_Fragment"
+            app:destination="@id/userChat_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/userChat_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.FeedbackFragment"
+        android:label="Feedback"
+        tools:layout="@layout/fragment_feedback">
+        <action
+            android:id="@+id/action_feedbackFragment_to_add_feedback"
+            app:destination="@id/add_feedback"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/add_feedback"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/add_feedback"
+        android:name="com.dating.klicked.Fragment.SideMenu.Add_Feedback"
+        android:label="Add Feedback"
+        tools:layout="@layout/fragment_add__feedback" />
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.FaqFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_faq">
+        <action
+            android:id="@+id/action_faqFragment_to_add_Faq_Fragment"
+            app:destination="@id/add_Faq_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/add_Faq_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_Faq_Fragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.Add_Faq_Fragment"
+        android:label="fragment_add__faq"
+        tools:layout="@layout/fragment_add__faq" />
+
+    <fragment
+        android:id="@+id/Profile_Fragment"
+        android:name="com.dating.klicked.Fragment.Profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_Profile_Fragment_to_profile_ViewedFragment"
+            app:destination="@id/profile_ViewedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/profile_ViewedFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_cardFragment"
+            app:destination="@id/cardFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/cardFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_rewardsFragment"
+            app:destination="@id/rewardsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/rewardsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_specificFeaturesFragment"
+            app:destination="@id/specificFeaturesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/specificFeaturesFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_boostProfile_Fragment"
+            app:destination="@id/boostProfile_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/boostProfile_Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_matches"
+            app:destination="@id/matches"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/matches"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_musicDespriction"
+            app:destination="@id/musicDespriction"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/musicDespriction"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_about"
+            app:destination="@id/about"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/about"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_preview_your_profile"
+            app:destination="@id/preview_your_profile"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/preview_your_profile"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_ViewedFragment"
+        android:name="com.dating.klicked.Fragment.Profile.Profile_ViewedFragment"
+        android:label="fragment_profile__viewed"
+        tools:layout="@layout/fragment_profile__viewed" />
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.dating.klicked.Fragment.Profile.CardFragment"
+        android:label="CardFragment"
+        tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/rewardsFragment"
+        android:name="com.dating.klicked.Fragment.Profile.RewardsFragment"
+        android:label="fragment_rewards"
+        tools:layout="@layout/fragment_rewards">
+        <action
+            android:id="@+id/action_rewardsFragment_to_rewardRedeemFragment"
+            app:destination="@id/rewardRedeemFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/rewardRedeemFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_rewardsFragment_to_redeemHistory"
+            app:destination="@id/redeemHistory"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/redeemHistory"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rewardRedeemFragment"
+        android:name="com.dating.klicked.Fragment.Profile.RewardRedeemFragment"
+        android:label="fragment_reward_redeem"
+        tools:layout="@layout/fragment_reward_redeem">
+        <action
+            android:id="@+id/action_rewardRedeemFragment_to_rewardsDetailsFragment"
+            app:destination="@id/rewardsDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/rewardsDetailsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/hintsFragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.HintsFragment"
+        android:label="fragment_hints"
+        tools:layout="@layout/fragment_hints">
+        <action
+            android:id="@+id/action_hintsFragment_to_add_Faq_Fragment"
+            app:destination="@id/add_Faq_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/add_Faq_Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_hintsFragment_to_subHintsFragment"
+            app:destination="@id/subHintsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/subHintsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/subHintsFragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.SubHintsFragment"
+        android:label="SubHintsFragment"
+        tools:layout="@layout/fragment_sub_hints">
+        <action
+            android:id="@+id/action_subHintsFragment_to_fullHintsFragment"
+            app:destination="@id/fullHintsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fullHintsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullHintsFragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.FullHintsFragment"
+        android:label="FullHintsFragment"
+        tools:layout="@layout/fragment_full_hints" />
+    <fragment
+        android:id="@+id/specificFeaturesFragment"
+        android:name="com.dating.klicked.Fragment.Profile.SpecificFeaturesFragment"
+        android:label="SpecificFeaturesFragment"
+        tools:layout="@layout/fragment_specific_features" />
+    <fragment
+        android:id="@+id/profile_Info_Fragment"
+        android:name="com.dating.klicked.Fragment.Profile.Profile_Info_Fragment"
+        android:label="Profile_Info_Fragment"
+        tools:layout="@layout/fragment_profile__info">
+        <action
+            android:id="@+id/action_profile_Info_Fragment_to_userChat_Fragment"
+            app:destination="@id/userChat_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/userChat_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/klickedList"
+        android:name="com.dating.klicked.Fragment.Klicked.klicked_Fragment"
+        android:label="klicked_Fragment"
+        tools:layout="@layout/fragment_klicked">
+        <action
+            android:id="@+id/action_klickedList_to_profile_Info_Fragment"
+            app:destination="@id/profile_Info_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/profile_Info_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.dating.klicked.Fragment.Klicked.RequestFragment"
+        android:label="RequestFragment"
+        tools:layout="@layout/fragment_request">
+        <action
+            android:id="@+id/action_requestFragment_to_profile_Info_Fragment"
+            app:destination="@id/profile_Info_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/profile_Info_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pendingFragment"
+        android:name="com.dating.klicked.Fragment.Klicked.PendingFragment"
+        android:label="PendingFragment"
+        tools:layout="@layout/fragment_pending">
+        <action
+            android:id="@+id/action_pendingFragment_to_profile_Info_Fragment"
+            app:destination="@id/profile_Info_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/profile_Info_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userChat_Fragment"
+        android:name="com.dating.klicked.Fragment.BottomMenu.UserChat_Fragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_user_chat" />
+    <fragment
+        android:id="@+id/boostProfile_Fragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.BoostProfile_Fragment"
+        android:label="BoostProfile_Fragment"
+        tools:layout="@layout/fragment_boost_profie" />
+
+
+    <dialog
+        android:id="@+id/BoostFaq"
+        android:name="com.dating.klicked.Fragment.SideMenu.BoostFAQBottomSheet"
+        tools:layout="@layout/boost_faq_bottomsheet" />
+
+    <fragment
+        android:id="@+id/speedDatingChatHistory"
+        android:name="com.dating.klicked.Fragment.SideMenu.SpeedDatingChatHistory"
+        android:label="speedDatingChatHistory"
+        tools:layout="@layout/fragment_speed_dating_chat_history" />
+
+
+    <fragment
+        android:id="@+id/matches"
+        android:name="com.dating.klicked.Fragment.Profile.Matches"
+        android:label="fragment_matches"
+        tools:layout="@layout/fragment_matches" />
+    <fragment
+        android:id="@+id/rewardsDetailsFragment"
+        android:name="com.dating.klicked.Fragment.Profile.RewardsDetailsFragment"
+        android:label="fragment_rewards_details"
+        tools:layout="@layout/fragment_rewards_details">
+        <action
+            android:id="@+id/action_rewardsDetailsFragment_to_redeemGiftFragment"
+            app:destination="@id/redeemGiftFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/redeemGiftFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/redeemGiftFragment"
+        android:name="com.dating.klicked.Fragment.Profile.RedeemGiftFragment"
+        android:label="fragment_redeem_gift"
+        tools:layout="@layout/fragment_redeem_gift" />
+
+    <fragment
+        android:id="@+id/redeemHistory"
+        android:name="com.dating.klicked.Fragment.Profile.RedeemHistory"
+        android:label="fragment_redeem_history"
+        tools:layout="@layout/fragment_redeem_history">
+        <action
+            android:id="@+id/action_redeemHistory_to_redeemHistoryDetails"
+            app:destination="@id/redeemHistoryDetails"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/redeemHistoryDetails"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/redeemHistoryDetails"
+        android:name="com.dating.klicked.Fragment.Profile.RedeemHistoryDetails"
+        android:label="fragment_redeem_history_details"
+        tools:layout="@layout/fragment_redeem_history_details" />
+
+    <fragment
+        android:id="@+id/blockedUserListFragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.BlockedUserListFragment"
+        android:label="fragment_blocked_user_list"
+        tools:layout="@layout/fragment_blocked_user_list" />
+    <fragment
+        android:id="@+id/musicDespriction"
+        android:name="com.dating.klicked.Fragment.Profile.MusicDespriction"
+        android:label="MusicDespriction"
+        tools:layout="@layout/fragment_music_despriction" />
+
+    <fragment
+        android:id="@+id/about"
+        android:name="com.dating.klicked.Fragment.Profile.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/preview_your_profile"
+        android:name="com.dating.klicked.Fragment.Profile.Preview_your_profile"
+        android:label="fragment_preview_your_profile"
+        tools:layout="@layout/fragment_preview_your_profile" />
+
+
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.HotelFragment"
+        android:label="fragment_hotel"
+        tools:layout="@layout/fragment_hotel">
+        <action
+            android:id="@+id/action_hotelFragment_to_hotelInfoFragment"
+            app:destination="@id/hotelInfoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/hotelInfoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelInfoFragment"
+        android:name="com.dating.klicked.Fragment.SideMenu.HotelInfoFragment"
+        android:label="fragment_hotel_info"
+        tools:layout="@layout/fragment_hotel_info" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.dating.klicked.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment"
+        tools:layout="@layout/fragment_privacy_policy"/>
+
+</navigation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".Authentication.View_Flipper">
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <include
+                android:id="@+id/userName_layout"
+                layout="@layout/user_name_layout" />
+
+            <include
+                android:id="@+id/userEmail_layout"
+                layout="@layout/user_email_layout" />
+
+            <include
+                android:id="@+id/user_dateOfBirth_layout"
+                layout="@layout/user_dateofbrith_layout" />
+
+            <include
+                android:id="@+id/user_gender_layout"
+                layout="@layout/user_gender_layout" />
+
+            <include
+                android:id="@+id/user_occupation_layout"
+                layout="@layout/user_occupation_layout" />
+
+            <include
+                android:id="@+id/user_state_layout"
+                layout="@layout/user_state_layout" />
+
+            <include
+                android:id="@+id/user_orientation_layout"
+                layout="@layout/user_orientation" />
+
+            <include
+                android:id="@+id/user_height_layout"
+                layout="@layout/user_height_layout" />
+
+
+            <include
+                android:id="@+id/user_card_layout"
+                layout="@layout/user_card_layout" />
+
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+
+</layout>

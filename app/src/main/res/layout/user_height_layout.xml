@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/btn_background" />
+
+            <!--  <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_back_arrow"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignParentStart="true"
+                  android:layout_marginTop="15dp"
+                  android:layout_marginStart="15dp"
+                  app:tint="@color/white" />-->
+
+            <TextView
+                android:id="@+id/txt_height_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_back_arrow"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Height"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_height_back"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_user_height_dots" />
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Your Height"
+                android:textColor="#2B2B2B"
+                android:textSize="18dp" />
+
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/numberpicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="15dp"
+                android:soundEffectsEnabled="true"
+                app:np_dividerColor="#662B2B2B"
+                app:np_dividerLength="100dp"
+                app:np_dividerThickness="0.5dp"
+                app:np_fadingEdgeEnabled="true"
+                app:np_formatter="@string/number_picker_formatter"
+                app:np_hideWheelUntilFocused="false"
+                app:np_max="300"
+                app:np_min="30"
+                app:np_order="ascending"
+                app:np_orientation="vertical"
+                app:np_selectedTextAlign="selectedTextAlignCenter"
+                app:np_selectedTextColor="@color/text_tittle"
+                app:np_selectedTextSize="25dp"
+                app:np_selectedTypeface="@font/poppins_medium"
+                app:np_textAlign="textAlignCenter"
+                app:np_textColor="@color/text_hint"
+                app:np_textSize="20dp"
+                app:np_typeface="@font/poppins_medium"
+                app:np_value="2"
+                app:np_wheelItemCount="3"
+                app:np_wrapSelectorWheel="true" />
+
+            <TextView
+                android:id="@+id/showHieght"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text=" 30cm = 1' 0'' "
+                android:gravity="center"
+                android:textStyle="normal"
+                android:textSize="17dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:layout_above="@id/txt_height_next" />
+
+            <LinearLayout
+                android:id="@+id/txt_height_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_background_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Next"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gander_bottom_sheets_background"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginTop="01dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Select Your Gender "
+            android:textColor="#2B2B2B"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_Straight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:paddingStart="10dp"
+                android:buttonTint="#fab665"
+                android:fontFamily="@font/poppins_medium"
+                android:layoutDirection="ltr"
+                android:text="Straight"
+                android:textColor="#F2707070"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/radio_Gay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:buttonTint="#fab665"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layoutDirection="ltr"
+                android:text="Gay"
+                android:textColor="#F2707070"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/radio_Lesbian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:buttonTint="#fab665"
+                android:fontFamily="@font/poppins_medium"
+                android:layoutDirection="ltr"
+                android:paddingStart="10dp"
+                android:text="Lesbian"
+                android:textColor="#F2707070"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/radio_Bisexual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:buttonTint="#fab665"
+                android:fontFamily="@font/poppins_medium"
+                android:layoutDirection="ltr"
+                android:paddingStart="10dp"
+                android:text="Bisexual"
+                android:textColor="#F2707070"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/radio_Asexual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:paddingStart="10dp"
+                android:buttonTint="#fab665"
+                android:fontFamily="@font/poppins_medium"
+                android:layoutDirection="ltr"
+                android:text="Asexual"
+                android:textColor="#F2707070"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/radio_Demisexual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:buttonTint="#fab665"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layoutDirection="ltr"
+                android:text="Demisexual"
+                android:textColor="#F2707070"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/radio_Pansexual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:buttonTint="#fab665"
+                android:fontFamily="@font/poppins_medium"
+                android:layoutDirection="ltr"
+                android:paddingStart="10dp"
+                android:text="Pansexual"
+                android:textColor="#F2707070"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/radio_Queer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:buttonTint="#fab665"
+                android:fontFamily="@font/poppins_medium"
+                android:layoutDirection="ltr"
+                android:paddingStart="10dp"
+                android:text="Queer"
+                android:textColor="#F2707070"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/radio_Bicurious"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:buttonTint="#fab665"
+                android:fontFamily="@font/poppins_medium"
+                android:layoutDirection="ltr"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Bicurious"
+                android:textColor="#F2707070"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+</layout>

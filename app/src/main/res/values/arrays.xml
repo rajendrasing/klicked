@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ld_activityScreenTitles">
+        <item>Who viewed My Profile ?</item>
+        <item>Plan</item>
+        <item>Rewards</item>
+         <item>Hotels</item>
+        <item>Speed Date Chats History</item>
+        <item>Hints</item>
+        <item>Faq</item>
+        <item>Boost your profile</item>
+        <item>Feedback</item>
+        <item>Deactivate Account</item>
+        <item>Block User</item>
+        <item>Privacy Policy</item>
+        <item>Logout</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_user_profile</item>
+        <item>@drawable/ic_icon_plan</item>
+        <item>@drawable/ic_noun_rewards</item>
+        <item>@drawable/ic_noun_hotels</item>
+        <item>@drawable/ic_icon_feedback</item>
+        <item>@drawable/ic_hints</item>
+        <item>@drawable/ic_icon_faq</item>
+        <item>@drawable/ic_noun_boots</item>
+        <item>@drawable/ic_icon_feedback</item>
+        <item>@drawable/ic_noun_deactive</item>
+        <item>@drawable/ic_icon_material_block</item>
+        <item>@drawable/ic_privacy_tip_24</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+
+    <string-array name="zodiac_signs">
+        <item>Select Zodiac Sign</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Saggitarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+
+
+    <string-array name="gander">
+        <item>Select Gender</item>
+        <item>Men</item>
+        <item>Women</item>
+        <item>Straight</item>
+        <item>Gay</item>
+        <item>Lesbian</item>
+        <item>Bisexual</item>
+        <item>Asexual</item>
+        <item>Demisexual</item>
+        <item>Pansexual</item>
+        <item>Queer</item>
+        <item>Bicurious</item>
+    </string-array>
+
+
+</resources>

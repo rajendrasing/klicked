@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Authentication.Login">
+
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_heart_icon" />
+
+        <TextView
+            android:id="@+id/txt_wel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Welcome!"
+            android:textColor="@color/text_tittle"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_wel"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Find someone you click with"
+            android:textColor="@color/text_hint"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/txt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_hint"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/btn_background_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Login With Phone no."
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_google_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/txt_login"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/btn_border"
+            android:drawableLeft="@drawable/ic_search"
+            android:elevation="1dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:onClick="GoogleLogin"
+            android:paddingStart="15dp"
+            android:text="Login With Google"
+            android:textColor="@color/text_hint"
+            android:textSize="15dp" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_google_login"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_fb_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/login_button"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:onClick="FbLogin"
+            android:background="@drawable/btn_border"
+            android:drawableLeft="@drawable/ic_facebook_icon"
+            android:elevation="1dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:paddingStart="18dp"
+            android:text="Login With Facebook"
+            android:textColor="@color/text_hint"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</layout>

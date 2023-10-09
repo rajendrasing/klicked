@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/btn_background"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"/>
+
+            <!--  <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_back_arrow"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignParentStart="true"
+                  android:layout_marginTop="15dp"
+                  android:layout_marginStart="15dp"
+                  app:tint="@color/white" />-->
+
+            <TextView
+                android:id="@+id/txt_Email_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Email"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:drawableLeft="@drawable/ic_back_arrow"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:drawableTint="@color/white"
+                android:layout_marginTop="15dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_Email_back"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_email__dots" />
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Enter Your Email  (Optional) "
+                android:textColor="#2B2B2B"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/ed_Email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/text"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/btn_border"
+                android:fontFamily="@font/poppins"
+                android:hint="Your Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="@color/text_tittle"
+                android:textColorHint="#D8D8D8" />
+
+
+            <LinearLayout
+                android:id="@+id/txt_email_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn_background_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Next"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>
